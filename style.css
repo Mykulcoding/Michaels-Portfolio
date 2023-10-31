@@ -3,14 +3,226 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  
 }
 
+
+/* Navigation CSS */
+
+/* Style for the header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* This pushes the .navigation and .icons divs to the sides */
+  align-items: center;
+  /* Vertically center the content within the .header section */
+  background-color: white;
+  background-color: #06131b;
+  background-image: url(images/Profile_header.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Style for the navigation div */
+.navigation {
+  display:flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 800px;
+  /* margin to push it to the right */
+  background-color: #06131b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+/* Style for the icons div */
+.header .icons img {
+  width: 70px;
+  height: auto;
+  transition: background-color 0.3s; 
+
+}
+
+/* Style for the hero-banner section */
+
+.hero-banner {
+  background-image: url("images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: right;
+  padding: 0px 0;
+}
+
+/* Style for the h2 element inside the hero-banner */
+.hero-banner h2 {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  /* Display children elements in a row (horizontally) */
+  align-items: center;
+  /* Vertically align children elements */
+}
+
+.page-section h2 {
+  flex: 1;
+  /* Allow the h2 to take up available space */
+  margin: 0;
+  /* Remove default margin */
+  ;
+}
+
+.page-section p {
+  flex: 1;
+  /* Allow the p to take up available space */
+  margin: 0 0 0 0px;
+  /* Add margin to separate the h2 and p */
+}
+
+
+/*image set as background */
+.hero-banner {
+  background-image: url("images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  
+}
+
+.hero-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the h2 and other elements within the hero content as needed */
+.hero-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: darkred;
+}
+
+#about {
+  background-color: white;
+  font: 2500;
+}
+
+
+
+.page-section {
+  display: grid;
+  grid-template-columns: repeat(1.5, 1fr);
+  /* Two columns with equal width */
+  grid-gap: 15px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Single column within the grid */
+  grid-auto-rows: minimax (150px, auto);
+
+}
+
+.work {
+  border: 5px solid #ccc;
+  /* Add borders for clarity */
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+  
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  /* This pushes the .navigation and .icons divs to the sides */
+  align-items: center;
+  /* Vertically center the content within the .header section */
+  background-color: white;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-left: 0px;
+}
+
+
+#Horiseon-Code-Optimization {
+  grid-area: "Horiseon-Code-Optimization";
+  background-image: url("images/02-portfolio-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#Prework-study-guide {
+  grid-area: "Prework-study-guide";
+  background-image: url("images/02-portfolio-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#FA-KIO {
+  grid-area: "FA-KIO";
+  background-image: url('images/02-portfolio-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#Placeholder-1 {
+  grid-area: "Placeholder-1";
+  background-image: url('images/02-portfolio-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#Placeholder-2 {
+  grid-area: "Placeholder-2";
+  background-image: url('images/02-run-buddy.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.work-grid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 300px;
+  height: 30vh;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "Horiseon-Code-Optimization Prework-study-guide"
+    "FA-KIO Placeholder-1 Placeholder-1"
+}
+
+
+@media (max-width: 768px) {
+  /* Mobile styles here */
+}
+
+.contact-grid{margin: 150px; height: fit-content;} 
+.page-section-contact
+.work #FA-KIO 
+
+
+
+
+
+
 h1,
-h2,
+h2 {font-size: 40px;}
 h3,
 h4,
 h5,
