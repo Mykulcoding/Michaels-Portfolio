@@ -48,7 +48,7 @@ Once satisfied with website, it was deployed.
 
 A portfolio of work showcased using skills and talents learned from the bootcamp. Website would be improved as more knowledge is gained.
 
-![alt text](images\Screenshot.PNG)
+![Screenshot](images/Screenshot.PNG)
 
 ## Credits
 
